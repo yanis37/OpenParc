@@ -38,4 +38,44 @@ class SiteController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/joueurs", name="joueurs")
+     */
+    public function players(): Response
+    {
+        return $this->render('site/players.html.twig', [
+            'controller_name' => 'SiteController',
+        ]);
+    }
+
+    /**
+     * @Route("/informations", name="infos")
+     */
+    public function info(): Response
+    {
+        return $this->render('site/info.html.twig', [
+            'controller_name' => 'SiteController',
+        ]);
+    }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contact(): Response
+    {
+        return $this->render('site/contact.html.twig', [
+            'controller_name' => 'SiteController',
+        ]);
+    }
+
+    /**
+     * @Route("/associations", name="asso")
+     */
+    public function asso(): Response
+    {
+        return $this->render('site/asso.html.twig', [
+            'controller_name' => 'SiteController',
+        ]);
+    }
+
 }
